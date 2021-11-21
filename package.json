@@ -8,7 +8,7 @@
     "dev": "tsc ./src/index.ts --outDir ./dist && yarn start",
     "restart": "rimraf dist && yarn build",
     "start": "node ./dist/index.js",
-    "build": " rimraf dist && tsc && node ./dist/index.js",
+    "build": " rimraf dist && tsc",
     "dev:client": "nodemon --exec yarn restart"
   },
   "keywords": [
