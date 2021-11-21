@@ -1,7 +1,7 @@
-[
+module.exports = [
      {
           "question": "What type of framework is Next.js?",
-          "q_id":"_234070a",
+          "q_id": "_234070a",
           "answerOptions": [
                { "answer": "Frontend" },
                { "answer": "Backend" },
@@ -12,7 +12,7 @@
 
      {
           "question": "When was Next.js released?",
-          "q_id":"_234070b",
+          "q_id": "_234070b",
           "answerOptions": [
                { "answer": "20 September 2019" },
                { "answer": "14 January 2017" },
@@ -22,7 +22,7 @@
      },
      {
           "question": "Which CSS Framework are we using?",
-          "q_id":"_234070c",
+          "q_id": "_234070c",
           "answerOptions": [
                { "answer": "Bootstrap" },
                { "answer": "TailwindCSS", "isCorrect": true },
@@ -32,7 +32,7 @@
      },
      {
           "question": "Which class in Tailwind is used to set flex direction of column?",
-          "q_id":"_234070d",
+          "q_id": "_234070d",
           "answerOptions": [
                { "answer": "col" },
                { "answer": "col-flex" },

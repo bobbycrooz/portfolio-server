@@ -1,6 +1,6 @@
 import { getResult } from "../../utils/question";
-import questions from "../../resourses/_question/questions.json";
-import { RankDB } from "../../DB/models/question.model";
+import questions from "../../question";
+import { RankDB } from "./question.model";
 // get all question controller
 export const getQuestions = (req, res, next) => {
      try {

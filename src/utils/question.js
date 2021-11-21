@@ -1,4 +1,5 @@
-import questions from "../resourses/_question/questions.json";
+
+import questions from "../question";
 
 export const getResult = (details) => {
      let score = [];

@@ -1,12 +1,12 @@
 import express from "express";
 import cors from "cors";
-import cookie from "cookie-parser";
+// import cookie from "cookie-parser";
 import {urlencoded, text} from 'body-parser';
 import morgan from 'morgan'
-import questionRouter from '../routes/QuestionApp/index'
+import questionRouter from './resourses/_question/question.route'
 import dotenv from 'dotenv';
-import {connect} from '../utils/DBconnect'
-import defaultRoute from '../routes/root'
+import {connect} from './utils/DBconnect'
+import defaultRoute from './routes/root'
 import path from 'path'
 
 
