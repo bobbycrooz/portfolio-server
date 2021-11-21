@@ -41,7 +41,7 @@ app.use((0, _bodyParser.text)({
   type: "text/html"
 }));
 app.use((0, _morgan.default)("dev"));
-app.use(_express.default.static(_path.default.join(__dirname, '../public')));
+app.use(_express.default.static(_path.default.join(__dirname, "public")));
 app.set('view engine', 'ejs'); // app.set("views", __dirname + "../views");
 // root routes
 
