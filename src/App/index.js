@@ -6,6 +6,8 @@ import morgan from 'morgan'
 import questionRouter from '../routes/QuestionApp/index'
 import dotenv from 'dotenv';
 import {connect} from '../utils/DBconnect'
+import defaultRoute from '../routes/root'
+import path from 'path'
 
 
 const app = express();
@@ -20,6 +22,13 @@ app.use(express.json());
 app.use(urlencoded({ extended: true }));
 app.use(text({ type: "text/html" }));
 app.use(morgan("dev"));
+app.use(express.static(path.join(__dirname, '../public')))
+app.set('view engine', 'ejs');
+// app.set("views", __dirname + "../views");
+
+// root routes
+app.use("/", defaultRoute);
+
 
 // auth routes
 // app.post("/signup", auth);
