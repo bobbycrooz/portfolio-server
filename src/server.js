@@ -4,14 +4,14 @@ import cors from "cors";
 import {urlencoded, text} from 'body-parser';
 import morgan from 'morgan'
 import questionRouter from './resourses/_question/question.route'
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 import {connect} from './utils/DBconnect'
 import defaultRoute from './routes/root'
 import path from 'path'
 
 
 const app = express();
-dotenv.config()
+// dotenv.config()
 
 
 app.disable("x-powered-by");
