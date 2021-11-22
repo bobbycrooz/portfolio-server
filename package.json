@@ -4,11 +4,11 @@
      "description": "node backend for my portfolio server",
      "main": "app.js",
      "scripts": {
-          "test": "echo \"Error: no test specified\" && exit 1",
+          "test": "rimraf dist",
           "dev": "nodemon --exec yarn restart ",
           "restart": "rimraf dist &&  babel ./src --out-dir dist --ignore ./node_modules && yarn start",
           "start": "node ./dist/index.js",
-          "build": " rimraf dist && babel ./src --out-dir dist "
+          "build": " rimraf dist && babel src --out-dir dist --copy-files"
      },
      "keywords": [
           "portfolio"
